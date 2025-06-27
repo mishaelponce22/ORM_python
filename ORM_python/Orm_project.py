@@ -27,7 +27,7 @@ class Curso(Base):
     estudiantes = relationship('Estudiante', secondary=estudiante_curso, back_populates='cursos')
 
 
-engine = create_engine('postgresql+psycopg2://postgres:mishael230452@localhost:5432/ormdb')
+engine = create_engine('postgresql+psycopg2://USUARIO:CONTRASEÑA@localhost:5432/ormdb')
 
 
 Base.metadata.create_all(engine)
